@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <style type="text/css">
+        .big{
+            border:1px solid blue;
+        }
+        .top{
+            border-top:1px solid blue;
+            border-bottom: 1px solid blue;
+        }
+        .big{
+            width: 1000px;
+            margin:0 auto;
+        }
+        table{
+            border: 1px solid;
+            width: 980px;
+            margin: 2px auto;
+        }
+        .butt{
+            /*border: 1px solid;*/
+            width: 400px;
+            margin:0 auto;
+            text-align: center;
+        }
+        .left{
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+<div class="big">
+    <div>提示</div>
+    <div>
+        <textarea name="" id="" cols="130" rows="5">一.申报单位或个人如果属于行政许可
+            范围的建设工程不得备案；二.备案以第一人称真实有效为准</textarea>
+    </div>
+    <div class="top">建设单位基本信息</div>
+    <div>
+        <table border="1px">
+            <tr>
+                <td>建设单位：<input type="text" placeholder="请填写建设单位全称" autofocus></td>
+                <td colspan="3">备案人:<input type="text" > </td>
+            </tr>
+            <tr>
+                <td>工程名称：<input type="text"></td>
+                <td>联系电话:<input type="text"> </td>
+            </tr>
+            <tr>
+                <td>
+                    工程地址：<select name="" id="">
+                                <option value="" selected>湖南省</option>
+                                <option value="">山西省</option>
+                                <option value="">吉林省</option>
+                                </select>
+                    <select name="" id="">
+                        <option value="">请选择</option>
+                        <option value="">长沙市</option>
+                    </select>
+                    <input type="text"placeholder="具体地址">
+                </td>
+                <td>使用性质:<input type="text"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="top">协同单位基本信息</div>
+    <div class="xietong">
+        <table>
+            <tr class="left">
+                <th>单位类别</th>
+                <th>单位名称</th>
+                <th>资质等级</th>
+            </tr>
+            <tr><form>
+                <td>设计单位</td>
+                <td><input type="text"></td>
+                <td><select name="" id="">
+                    <option value=""selected >甲级</option>
+                    <option value="">乙级</option></select></td>
+               <td><input type="button"value="添加"></td>
+                <td><input type="reset"value="删除"></td></form>
+            </tr>
+            <tr><form>
+                <td>社工单位</td>
+                <td><input type="text"></td>
+                <td><select name="" id="">
+                    <option value=""selected>特级</option>
+                </select></td>
+                <td><input type="button"value="添加"></td>
+                <td><input type="reset"value="删除"></td></form>
+            </tr>
+            <tr><form>
+                <td>监理单位</td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="button"value="添加"></td>
+                <td><input type="reset"value="删除"></td></form>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="top">工程基本情况</div>
+    <div>
+        <div>
+            <table>
+            <tr class="left">
+                <th>建筑物名称</th>
+                <th>结构</th>
+                <th>耐火等级</th>
+                <th>高度</th>
+                <th>层数</th>
+                <th>建筑物面积</th>
+                <th>值</th>
+                <th>火灾危险性类别</th>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><select name="" id="">
+                    <option value="">砖木结构</option></select></td>
+                <td><select name="" id="">
+                    <option value="">一级</option>
+                    <option value=""selected>二级</option>
+                    </select>   </td>
+                <td><input type="text" size="5"></td>
+                <td><input type="text" size="5"></td>
+                <td><select name="" id="">
+                    <option value="">建筑面积</option></select></td>
+                <td><input type="text" size="7"></td>
+                <td><select name="" id="">
+                    <option value="">请选择</option>
+                </select></td>
+            </tr>
+        </table>
+            <div class="butt">
+                <input type="button" value="添加一行">
+                <input type="button" value="删除一行">
+            </div>
+        </div>
+    </div>
+    <div class="top">储罐情况</div>
+    <div>
+        <table>
+            <tr>
+                <td>位置</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>设置类型：</td>
+                <td>
+                    内浮顶罐<input type="checkbox" name="set">
+                    水槽式罐<input type="checkbox" name="set">
+                    浮顶罐<input type="checkbox" name="set">
+                </td>
+            </tr>
+            <tr>
+                <td>储物类别</td>
+                <td>
+                    可燃液体<input type="radio"name="t">
+                    易燃液体<input type="radio" name="t">
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

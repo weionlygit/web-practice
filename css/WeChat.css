@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style:none;
+}
+a{
+    color: #9D9D9D;
+    text-decoration: none;
+    font: normal 14px "Microsoft Himalaya";
+}
+a:hover{
+    color: #31c27c!important;
+}
+span{
+    font: normal 16px "Microsoft Himalaya";
+}
+.we-chat {
+        width: 100%;
+        /*height: 100%;*/
+}
+
+.header{
+    width: 100%;
+    height: 51px;
+    /*border: blue solid 1px;*/
+    background-color: #414143;
+    text-align: center;
+}
+.header span{
+    color: #929294;
+    float: left;
+    margin:10px 13px;
+}
+/*.header .button{*/
+    /*float: right;*/
+    /*margin: 10px 13px;*/
+    /*width:50px;*/
+/*}*/
+/*.header .button1，.header .button2{*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*border: 0;*/
+    /*padding-left: 20px;*/
+/*}*/
+/*.header .button1{*/
+    /*background: url("../image/放大镜.png");*/
+/*}*/
+.page-container{
+    width: 100%;
+    height: 562px;
+    background-color: #F2F2F2;
+}
+.footer{
+    width: 100%;
+    height: 55px;
+    border-top: #DDDDDD solid 1px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.footer-icon{
+    height: 100%;
+    width:50px;
+    /*border: red solid 1px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-image{
+    flex: 3;
+    width: 80%;
+    /*border: blue solid 1px;*/
+    padding-top:3px;
+}
+.footer-a{
+    flex: 2;
+    width: 100%;
+    /*border: blue solid 1px;*/
+    text-align: center;
+    margin-top: -13px;
+}
+.footer-image img {
+    width: 69%;
+    padding-left: 19%;
+}
+
+/*微信*/
+.message{
+    width: 100%;
+    height: 70px;
+    border-bottom:#D6D6D6 solid 1px;
+    position: relative;
+}
+.message a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.message-left{
+     width: 50px;
+     height: 50px;
+     margin-top: 9px;
+     margin-left: 13px;
+    /*border: red solid 1px;*/
+    float: left;
+    position: relative;
+}
+.message .qun {
+    border: #DDDDDD solid 2px;
+    width: 48px;
+    height: 48px;
+}
+.message-left-red{
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+}
+.message-left-red-qun{
+    width: 13px;
+    height: 13px;
+}
+
+.message-right{
+    width: 280px;
+    height: 50px;
+    margin-top: 9px;
+    margin-left: 12px;
+    /*border: red solid 1px;*/
+    float: left;
+}
+.message .message-right .m-span-top{
+    margin-top: 5px;
+    font:normal 18px "Microsoft Himalaya";
+    color: #000;
+}
+.message .message-right .m-span-up{
+    font: normal 14px "Microsoft Himalaya";
+    color: #9D9D9D;
+}
+
+.message-time{
+    position: absolute;
+    right: 5%;
+    top: 15%;
+}
+/*通讯录*/
+.address-bar{
+    width: 100%;
+    height: 225px;
+    /*border: red solid 1px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.address-bar-row,.address-people{
+    flex: 1;
+    width: 85%;
+    border-bottom: #DDDDDD solid 1px;
+    margin-left: 5%;
+}
+.address-bar-left{
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
+    /*border: green solid 1px;*/
+    float: left;
+}
+.address-b-left{
+    width: 40px;
+    height: 40px;
+    margin-top: 8px;
+    /*border: green solid 1px;*/
+    float: left;
+}
+.address-bar span{
+    float: left;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.address-b span{
+    float: left;
+    padding-top: 16px;
+    padding-left: 15px;
+}
+.address-num{
+    width: 100%;
+    height: 24px;
+    background-color: #EBEBEB;
+    margin-top: -1px;
+}
+.address-num span{
+    padding-left: 19px;
+    font:normal 21px "Microsoft Himalaya";
+    color: #9D9D9D;
+}
+.address-b{
+    width: 100%;
+    height: 285px;
+    /*border: red solid 1px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.address-bar-left img{
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.address-people img{
+    width: 100%;
+    height: 100%;
+}
+/*发现*/
+.found{
+    width: 100%;
+    height: 56px;
+    background-color: #FFFFFF;
+}
+.me{
+    width: 90%;
+    height: 56px;
+    background-color: #FFFFFF;
+    margin-left: 5%;
+}
+.found-left{
+    width: 30px;
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 20px;
+    /*border: red solid 1px;*/
+    float: left;
+}
+.me-left{
+    width: 30px;
+    height: 30px;
+    margin-top: 11px;
+    /*margin-left: 20px;*/
+    /*border: red solid 1px;*/
+    float: left;
+}
+.found span,.me span{
+    float: left;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.found .found-left img{
+    width: 100%;
+    height: 100%;
+}
+/*我的*/
+.me-main{
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+}
+.me-main-left{
+    width: 70px;
+    height: 70px;
+    margin-left: 16px;
+    margin-top: 4px;
+    /*border: red solid 1px;*/
+    float: left;
+}
+.me-main-right{
+    float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.me-main-left img{
+    width: 100%;
+    height: 100%;
+}
+.me-left img{
+    width: 90%;
+    height: 90%;
+}
+/*朋友圈*/
+.friend-top{
+    width: 100%;
+    height:252px;
+}
+.friend-top img{
+    width: 100% ;
+    height: 110%;
+    margin-top: 50px;
+}
+.my-list{
+    width: 85px;
+    height: 85px;
+    border: #DDDDDD solid 2px;
+
+    position: absolute;
+    right: 3%;
+    top: 41%;
+}
+.friend-top span{
+    position: absolute;
+    right: 30%;
+    top: 45%;
+    color:#333333;
+    font: bold 16px "Microsoft Himalaya";
+}
+.friend-page{
+    margin-top: 100px;
+    width: 100%;
+    height: 520px;
+    /*border: blue solid 1px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.people {
+    width: 100%;
+    flex: 1;
+    border-bottom: #DDDDDD solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.people-logo{
+    width: 50px;
+    height: 45px;
+    flex: 1;
+    padding-top: 20%;
+    margin-left: 2%;
+}
+.people .people-logo img{
+    width: 100%;
+    height: 100%;
+}
+.people .people-matter{
+    flex: 7;
+    padding-top: 21%;
+    padding-left: 4%;
+    position: relative;
+}
+.people-pinglun{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.camera,.sousuo,.jiahao{
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 8px;
+}
+/*聊天界面*/
+.talk-footer{
+    width: 100%;
+    height: 52px;
+    border-top: #DDDDDD solid 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.talk-footer-1,.talk-footer-2,.talk-footer-3,.talk-footer-4{
+    height: 40px;
+    /*border: blue solid 1px;*/
+    margin-top: 5px;
+}
+.talk-footer-1 img,.talk-footer-3 img,.talk-footer-4 img{
+    width: 100%;
+    height: 100%;
+}
+.talk-message{
+    width: 100%;
+    height:562px;
+    background: url("../image/提莫背景.jpg");
+    background-size: 100% 100%;
+    opacity: 0.6;
+    /*margin-top: 20px;*/
+}
+.talk-page-container{
+    width: 100%;
+    /*height: 300px;*/
+}
+/*聊天记录*/
+.talk-recode{
+    height: 800px;
+    width: 97%;
+    /*border: red solid 1px;*/
+    margin-left: 1% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.talk{
+    width: 100%;
+    /*border: blue solid 1px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.talk-ppp{
+    /*border: green solid 1px;*/
+    position: relative;
+}
+.talk-1,.talk-4{
+    width: 13%;height: 85%;
+}
+
+.talk-2,.talk-3{
+    display: inline-block;
+    width: 25%;
+    height: 83%;
+    /*border: red solid 1px;*/
+    background-color: white;
+    border-radius: 3%;
+    text-align: center;
+    margin-left: 4%;
+    margin-right: 4%;
+    position: relative;
+}
+.talk-2 span,.talk-3 span{
+    position: absolute;
+    left: 12%;
+    top:22%;
+    /*text-align: center;*/
+}
+
+/*小角标*/
+.talk-smallroll{
+    /*border: blue solid 1px;*/
+    width: 12px;
+    height: 12px;
+    z-index: 1;
+    position: absolute;
+    left: 16%;
+    top:27%;
+    background-color: white;
+    transform: rotate(45deg);
+}
+.talk-smallroll-right{
+    left: 81%;
+}

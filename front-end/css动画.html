@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <link rel="stylesheet" href="../css/css动画.css">
+    <style>
+        .bb{
+            width:50px;
+            height: 50px;
+            background: url("../image/冯2.jpg");
+            background-size:cover ;
+            border-radius: 50%;
+            animation: ww 5s;
+            position: relative;
+        }
+        @-webkit-keyframes ww {
+            0%{
+                left: 0px;
+            }
+            100%{
+                transform: rotate(360deg);
+                left: 800px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<!--<div>-->
+    <!--<img src="../image/小姐姐.jpg" alt="">-->
+<!--</div>-->
+<div class="aa"></div>
+
+<div class="bb"></div>
+</body>
+</html>

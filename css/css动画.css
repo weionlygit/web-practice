@@ -1,0 +1,33 @@
+/*img{*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*border-radius: 50%;*/
+    /*position: relative;*/
+    /*animation:gun 5s;*/
+/*}*/
+/*@-webkit-keyframes gun {*/
+    /*0%{*/
+        /*left: 0px;*/
+        /*transform:rotate(0deg);*/
+        /*width: 50px;*/
+        /*height: 50px;*/
+    /*}*/
+    /*100%{*/
+        /*left: 1080px;*/
+        /*transform: rotate(7800deg);*/
+        /*width: 100px;*/
+        /*height: 100px;*/
+    /*}*/
+/*}*/
+.aa{
+    width: 30px;
+    height: 30px;
+    border:red solid 1px;
+    /*-webkit-transform: translate(100px,500px);*/
+    -webkit-transform: rotate(50deg);
+}
+.aa:hover{
+    width: 100px;
+    height: 100px;
+    -webkit-transition:width 1s, height 2s,-webkit-transform 2s;
+}
